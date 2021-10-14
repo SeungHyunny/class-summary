@@ -1,0 +1,18 @@
+Run SQL Command Line
+-> conn as sys
+-> conn as sysdba
+-> user-name: (내가 정한 name)
+->password: (내가 정한 password)
+
+==> user만드는 법
+create user (만들고 싶은 name) identified by (설정할 password);
+
+==> user만들고 권한주기
+grant connect, resource to ai403;
+
+oracle sql developer에서 새로만들기/데이터베이스 접속 선택
+-> COMMAND에서 만든 USER접속
+->TABLE만들기
+
+이클립스(오라클 db연결)
+->빌드패스->libraries -> add external jars - > (오라클db있는 자리 찾기)(jdbc)

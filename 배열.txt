@@ -1,0 +1,29 @@
+1. 배열선언
+int [ ] values;
+int[ ]values = null;
+
+2. 배열생성
+values = new int[10]; -> 10개의 정수를 저장할 수 있는 배열을 생성
+
+** 선언과 동시에 생성 => int[ ] scores = new int[ ];
+
+3. 초기값
+숫자형 : 0
+boolean : false
+객체 : null
+
+4. 배열요소 사용하기
+방법 1. for
+for(int i=0 ; i<배열.length ; i++){
+system.out.println(배열[ i ]);
+}
+방법 2. while
+int i=0;
+while(i < 배열.length){
+system.out.println(scores[i++]);
+}
+방법 3. 향상된 for문
+for(int x : 배열) {
+system.out.println(x);
+}
+
