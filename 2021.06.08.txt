@@ -1,0 +1,25 @@
+2021.06.08
+
+1. Collection -> java.util 패키지에 포함
+
+1) List : 순서 o / 중복 o
+-> 구현 클래스 : ArrayList, Vector, LinkedList
+-> add로 객체 추가/ set으로 객체 변경 가능
+-> LinkedList는 stack과 queue구현을 용이하게 지원
+---> stack과 queue를 구현할 때는 폴리모피즘 방식으로 하면 안됨
+* 폴리모피즘 방식 : 상위 클래스로 하위 객체를 만든다
+stack구현 : 후입선출법(LIFO구조 => push / pop)
+queue구현 : 선입선출법(FIFO구조 => offer / poll)
+---> pop이나 poll을 하게되면 데이터는 호출과 동시에 사라짐
+
+2) Set : 순서 x / 중복 x
+-> 구현 클래스 : HashSet, TreeSet
+-> add로 객체 추가
+
+3) Map
+-> 구현 클래스 : HashMap, Hashtable, TreeMap, Properties
+
+학번 이름 국어 영어 수학 = score객체
+list에 score를 담고 총점이 높은사람 순으로 내림차순 정렬해서
+총점이 같으면 수학성적이 높은사람이 우선 정렬
+학번 -> 이름 -> 국어 영어 수학 총점 평균

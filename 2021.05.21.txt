@@ -1,0 +1,18 @@
+2021.05.21
+
+1. Ctrl + shift + o =>import 됨
+
+Scanner scan = new Scanner(System.in); 후에 Ctrl + shift + o 단축키 사용하면
+import java.util.Scanner; 나타남
+
+2. ln은 줄바꿈
+System.out.print : 줄 안바꿈
+System.out.println : 줄바꿈
+
+3. ==대신에 .equals( ) 쓰기
+
+4. 문자열 : scan.nextLine( );
+숫자 : scan.nextInt( );
+
+5. 랜덤
+int 변수 = (int)(Math.random( )*가짓수)+범위의 가장 낮은 숫자

@@ -1,0 +1,28 @@
+2021.05.03
+1. HTML5 라디오 타입 : 같은 그룹에 하나만 선택
+<input type="radio" name="~" value="~" checked>
+
+2. 체크박스 타입 : 같은 그룹에 중복 선택 가능
+<input type="checkbox" ...>
+
+3. 버튼 타입
+<button type="button" onclick="alert('~')">~~</button>
+<input type="button" onclick="alert('~')" value="~~">
+
+input -> reset, submit
+button -> 대부분 button type 사용
+
+** jsp에서 String A : request.getParameter("~~") : 대문자 신경쓰기
+** GUI 환경에서 '이벤트 처리'는 가장 중요!
+
+4. 선택 목록
+펼침 목록에서 한 가지만 선택
+<select name="~~">
+	<option value="~">~~~</option>
+	<option value="~">~~~</option>
+</select>
+
+* <select multiple> : 다중 선택가능
+* <select size="~"> : 몇 개 까지 보일지 선택
+
+5. 

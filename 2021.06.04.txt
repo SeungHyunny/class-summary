@@ -1,0 +1,21 @@
+1. StringBuffer : 동기화 됨 => 멀티스레드 환경
+StringBuilder : 동기화 안됨 => 단일 스레드환경
+차이점 -> 동기화 여부
+
+2. 정규표현식
+이메일, 전화번호, 주민등록번호 에 사용
+
+3. random 클래스 이용 방법
+1) import java.util.Random;
+2) Random 객체 = new Random(); //seed가 없는 경우
+3) Random 객체 = new Random(5); // 5 => seed : seed가 정해져있으면 항상 같은 수 발생
+4) for(int i=0; i<10; i++) {
+	System.out.print(rnd.nextInt(45)); // nextInt(45)의 뜻은 0~44 난수 발생
+    }
+4. date & calendar
+Date ==> SimpleDateFormat form = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss"); //import필요
+Calendar ==> 
+
+5. format
+
+6. java.time패키지

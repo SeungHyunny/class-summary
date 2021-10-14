@@ -1,0 +1,36 @@
+2021.06.09
+
+1. divide by quenguer
+- 기능별로 하나하나 나눠라
+
+2. 정렬할때
+1) comparator
+compare(o1,o2){
+
+}
+
+2) comparable
+compareTo(o){
+
+}
+
+3. javaFX
+
+- fxml이용해서 디자인하기
+
+1. 컨테이너 정하기
+1) AnchorPane : 원하는 위치와 사이즈 정하기
+2) VBox
+3) HBox
+4) BorderPane
+
+2. 컨테이너 선언
+방법 1 : AnchorPane 컨테이너이름= new AnchorPane( );
+방법 2 : AnchorPane 컨테이너이름 = FXMLLoader.load(getClass().getResource("fxml이름.fxml"));
+
+3. Scene 선언
+Scene scene = new Scene(root)
+
+
+
+

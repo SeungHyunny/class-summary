@@ -1,0 +1,6 @@
+2021.05.17
+<script src="http://code.jQuery.com/jQuery-3.2.1.min.js></script>
+<script>
+ $(document).ready(function( ){
+$("선택자").메소드( );
+})

@@ -1,0 +1,43 @@
+2021.05.20
+1. 비교연산자 ~ 연산결과는 boolean 타입
+		// 연산결과를 대입하려면 boolean type으로 선언해야함
+
+2. 비교연산자를 즐겨사용하는 위치
+		//if(이자리), else if(이자리)
+		//for( ; (이자리) ; )
+		//while(이자리)
+		//(이자리)? x:y
+		//논리연산 사용하는 장소도 마찬가지
+
+3. double pia = 3.14d; //d생략가능
+		float pib = 3.14f; //f생략 불가능
+
+4. 객체를 비교할때는 그 객체가 가지는 값을 비교할건지, 저장장소(공간)를 비교할건지
+
+5. String객체 만들기
+		String name1=new String("홍길동"); 
+		String name2="홍길동";
+		res = name1 == name2;
+		System.out.println("문자열비교결과2 :" + res);
+
+6. 객체를 비교할때는 그 객체가 가지는 값을 비교할건지, 저장장소(공간)를 비교할건지
+		System.out.println("문자열비교결과3 :" + (name1.equals(name2)));
+
+7. 숫자 동등 비교는 == 사용(타입만 주의)
+   객체 비교는 주로 .equals( ) 메소드 사용
+
+8. JOptionPane
+Integer.parseInt(JOptionPane.showInputDialog("숫자입력:"));
+
+9. 대입연산자는 문자열 결합에도 사용할 수 있음
+
+10. system.out.println( ) : 줄만 바꾸기
+
+11. 피연산자 중 문자열이 있으면 문자열로 결합
+
+12. 3/2 = 1.5가 되려면 3.0/2 or 3/2.0
+
+
+
+
+

@@ -1,0 +1,57 @@
+2021.06.07
+1. \표시 : \u00A4
+
+2. Thread
+MyThread th1 = new MyThread(); //일반 객체 생성하듯이 스레드 만듦
+MyThread2 th2 = new MyThread2();
+th1.run();
+th2.run(); ------> th1이후에 th2 실행
+//-------------------------------------------------------------------------
+th1.start();
+th2.start(); ------>th1과 th2 동시 실행 
+
+스레스 생성 방법 두 가지
+1) 스레드를 상속받아 만들 수 있음 ==> public class MyThread extends Thread
+2) Runnable을 구현해서 만들 수 있음 ==> public class MyTask1 implements Runnable
+
+두 가지 방법 모두 @Override 해줘야함
+
+
+3. Toolkit toolkit = Toolkit.getDefaultToolkit(); // Toolkit 생성
+
+4. 데몬(daemon)스레드
+늘 상주하고 있는 스레드(주 스레드의 작업을 돕는 보조적인 역할 수행)
+주 스레드가 종료되면 데몬 스레드는 강제적으로 자동 종료
+--> main스레드가 종료돼도 setDaemon(true) 호출하면 데몬스레드 실행됨
+
+5. 컬렉션 프레임워크(Collection Framework)
+1) List => 순서있고 중복가능
+2) Set => 순서없고 중복불가능
+3) Map => key(set_중복x)와 value(list_중복o)가 1:1로 매칭되어 있음
+
+6. 병렬
+cpu여러개, 같은 시간에 수행
+
+7. 동시성
+cpu는 한개, 시간을 맞춰 빠르게 수행되도록
+
+8. api 볼때 이태리체로 되어있는 것은 인터페이스
+
+9. collection
+-> 인터페이스 -> 객체생성X
+Collection collection = new ArrayList( ); ----> ArrayList, LinkedList, Vector 중 하나
+Collection<String> col1 = new ArrayList<>( );
+//<타입> <>안에 있는 타입만 들어오게 하겠다.
+1) List => ArrayList, vector, LinkedList
+2) Set => hashset, treeset
+3) map => hasemap, hashtable, treemap, properties
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+2021.05.26
+**문자열 뒤로 정수들의 사칙연산을 할 때는 괄호 필수
+1. 메소드
+
+
+
+2. CLASS
+구성 : 필드, 생성자, 메소드
+char' ' = \u0000 ==> 공백을 뜻함(초기값)
+-> 가급적이면 하나인것이 좋다.
+-> 만약 여러개라면 mail class에만 public을 붙일 수 있음
+
+
+3. 생성자(constructor)
+1) 기본생성자
+-> final 자료형 변수명; 처럼 값 지정을 안했을 때에도 매개변수 하나는 넣을 수 있다.
+2) 일반생성자
+-> 일반생성자 지정이 없다면 기본생성자가 기본으로 들어가 있음.
+
+4. 오버로딩(overloading)
+-> 일반메소드도 가능
+-> 하나의 클래스안에 이름이 똑같은 메소드를 여러개 두는 것
+-> 매개변수의 타입, 개수, 타입의 순서가 다른 생성자 여러 개 선언
+-> 생성메소드에서 다른 생성메소드 호출가능(무조건 첫줄에서만) : this( )
+-> 반환값 있고없고 상관x(void)
+
+4-1) 가변형인수
+내가 원하는 만큼 매개변수를 쓸 수 있음
+ex) public void add(int...a){
+	int sum=0;
+	for(int x:a) {
+	sum+=x;
+	}
+	system.out.println("합계:"+sum);
+    }
+==> main에서 obj.add(1,2,3,4,5,6,7,8,9,10); 이와같이 쓸 수 있음
+
+5. return
+return 값; ==>값이 없으면 메소드 종료
+
+6. 정적멤버(static)
+클래스에 고정된 필드와 메소드
+필드, 메소드 선언할 때 static 키워드 붙임
+정적멤버 만드는 방법 : 클래스에만 붙어있는 메모리를 할당받음
+객체를 생성하지 않고 사용해야 할 때 static을 붙임
+- 정적메소드는 객체생성없이 클래스명으로 호출가능
+- but, 조건을 건다면 객체를 생성해야함
+ex) 계산기가 켜져있는 상태에서만 곱셈을 가능하게 해라.
+
+
+7. 정적 초기화 블록(초반에 위치)
+- 생성메소드와 관련x
+- 생성메소드에서는 사용x
+- static없이 만든 초기화 블록 => instance블록
+
+8. final 필드
+최종적인 값을 갖고있는 필드 => 값을 변경할 수 없는 필드
+final필드의 딱 한번의 초기값
+상수 만들 때 final static(순서 변경 상관 無)을 붙여 만든다
+-> 상수 값은 전부 대문자로 작성
+-> 다른 단어가 결합되면 _(언더바)로 연결
+-> 잘 안바뀌는 숫자를 상수로 처리함
+
+9. 싱글톤(singleton)
+-> 오로지 하나 밖에 없는 객체를 보장해주는 클래스
+3가지룰
+1. 생성메소드와 생성메소드를 private로 전환
+2. 싱글톤 객체를 선언 private static으로 전환
+3. 싱글톤을 가져갈 메소드를 public static으로 오픈
+ex) 
+public class OnlyYou {
+	private OnlyYou() {}
+	private static OnlyYou me = new OnlyYou();
+	public static OnlyYou getInstance() {
+		return me;
+	}
+}
+============main=========
+public static void main(String[] args) {
+		OnlyYou single = OnlyYou.getInstance();
+		OnlyYou single2 = OnlyYou.getInstance();
+		System.out.println(single==single2);
+	}
+
+10. 초기화 블럭
+정적 초기화 블럭은 객체생성과 관계없이 정적 필드의 값을 초기화할 때 사용
+static변수만 초기화 가능 ==> static이 없다면 instance변수 초기화 가능
+static method내에서 외부의 필드는 메소드는 정적이어야 한다.
+그러나 인스턴스 변수나 인스턴스 메소드는 객체를 만들어 접근 가능함
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

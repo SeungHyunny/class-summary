@@ -1,0 +1,9 @@
+1. 이클립스에서 fxml만들기 -> 크기지정
+2. scenebuilder로 오픈
+3. scenebuilder에서 디자인 -> 저장
+4. 이클립스에서 이벤트 처리할 class만들기
+5. scenebuilder에서 controller 저장 (패키지.클래스)
+6. view -> skeleton copy -> 이벤트class에 붙여넣기
+7. main class 작성
+8. 이벤트 class 작성
+

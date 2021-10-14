@@ -1,0 +1,83 @@
+2021.05.31
+
+1. 중첩클래스
+1) 멤버 class
+1-1) 인스턴스
+class A{ class B{...} }
+
+static main에서 호출할 때 :
+1. 객체먼저 생성
+ex) 클래스명 obj = new 클래스명( );
+     클래스.중첩클래스명 객체명=obj.new 중첩클래스명( );
+2. 클래스 obj=new 클래스( );
+
+1-2) 정적
+class A{ static class B{...} }
+호출할 때 : A$B.~
+
+2) 로컬 class
+
+2. 에러(error)와 예외(exception)
+1) 에러(error) : 하드웨어 고장/오류
+2) 예외(exception) : 코딩 오류
+
+3. 예외
+
+예외의 종류 : 일반예외 / 실행예외
+
+1) / by zero => 정수를 0으로 나누면 예외처리됨
+
+2) array index out of bounds => 배열에서 인덱스 범위 초과하여 사용할 경우 발생
+
+3) null pointer => 객체 참조가 없는 상태
+ex) String data = null;
+     System.out.println(data.toString());
+
+4) class cast => 타입 변환이 안될경우
+: 상하는 가능 / 형제간(좌우)는 안됨
+ex) Dog & Cat extends Animal 일때
+Dog와 Cat는 변환 안됨.
+
+4 예외처리
+==> try - catch - finally 이용해서 예외 처리 코드 작성 <==
+public void test( ){
+try{
+	예외처리 될 것같은 문장}
+catch(exception e) //exception종류 하나를 넣으면 됨. exception을 넣으면 모든 예외처리 검사
+{ 예외처리가 났을 때 오류 문구 : System.out.println(e.getMessage( )); }
+}
+
+5. print stack trace( ) : 예외발생코드 추적한 내용을 모두 콘솔에 출력
+		   : 개발시에는 보통 살려둠.
+
+6. finally
+: 예외발생유무와 관계없이 무조건 수행해야 할 부분
+메소드앞에 붙이면 오버라이딩 불가
+
+7. JOptionPane.showInputDialog("~~~~~")
+=> prompt와 동일한 기능
+
+8. Integer.parseInt
+문자열을 숫자로 바꾸는 방법
+변수 = Integer.parseInt("~~~")
+
+<->
+숫자를 문자열로 바꾸는 방법
+변수 = Integer.toString(~~)
+
+9. scanner 객체 사용하기
+==> import java.util.Scanner; 먼저 선언하고
+==> Scanner 변수1 = new Scanner(System.in);
+==> String 변수2 = 변수1.nextLine();
+
+10. multicatch
+* 예외 catch블럭이 여러개일때 그 예외들이 조손관계가 아니라면 배치순서는 전후가 없다.
+* 조손관계에 있다면 자손클래스가 먼저 배치되어야 함.
+catch(NumberFormatException | ArrayIndexOutOfBoundsException e)
+-> or( | )로 한줄에 배치 가능
+
+11. throw new Exception(); 
+* 예외를 강제로 발생시킴
+
+12. System.err.println(); 
+* 예외를 출력할때는 out 대신 err를 주로 사용

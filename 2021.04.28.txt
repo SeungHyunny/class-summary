@@ -1,0 +1,123 @@
+2021.04.28
+
+* Eclipse실행->window->show view->project explorer
+*sinvas uml tool활용
+
+1. 웹 : world wide web
+- http프로토콜 사용
+- html(현재는 5)
+1) 마크업 언어 : 웹에서 사용되는 문서가 어떻게 구조화되는가를 나타내는 언어
+2) 편집기 종류 ex) 메모장, 노트패드++
+* header - footer
+
+자바스크립트 : 웹 브라우저에서만 작동
+*웹 브라우저 : URL(Uniform Resource Locator)(주소)을 통해 접근
+-웹 브라우저 종류 ex) 구글 크롬
+
+2. 웹 환경의 이해
+                              요청          요청
+클라이언트(웹 브라우저)  ->  인터넷  ->  웹 서버(아파치)
+클라이언트(웹 브라우저)  <-  인터넷  <-  웹 서버(아파치)
+                              응답           응답
+
+3. 웹 서버의 기능
+1) 리스너 기능 : 아파치 톰캣
+2) 답변 기능
+
+- 프로토콜 : 네트워크에서 제공하는 일종의 데이터 전송 규약
+                웹 서버는 HTTP를 통해 클라이언트와 대화
+-포트 : 웹 서버에서 일종의 문
+         아파치 톰캣의 경우 8080번 포트를 사용
+
+@ 서버 프로그램
+- JSP(Java Server Page), ASP, PHP 등
+특히 자바를 기반으로 한 JSP가 많이 사용됨
+
+@ rem : 주석
+확장자 xml파일은 환경구동과 관려돼있음.
+
+@ 아파치톰캣
+bin파일-> start up / shut down
+conf파일-> server(포트번호 변경 가능)
+
+@ 이클립스
+-아파치톰캣을 기본으로 하는 방법
+프로젝트 만들기전에 서버를 먼저 만들기
+
+@ src->webapp : html소스, jsp소스가 들어감
+
+4. 인코딩/디코딩
+"EUC-KR"에서 "UTF-8"로 인코딩방법을 바꿔줘야함
+window->preferences->'enc'검색->모두 UTF-8로 변경
+
+5. 이클립스에서 웹 브라우저 바꾸는 법
+window->web browser
+
+6. html기본 틀
+->태그 이름은 대소문자 구분 없음
+->html5에서는 엔터, 탭, 스페이스바와 같은 키보드 값을 인식하지 않음.
+스페이스바 대신 특수문자 사용
+-> 문서의 구조 명확하게
+-> 들여쓰기를 해야 소스코드의 가독성이 높아짐.
+-> 줄 바꿈 필요=> <br>
+-> 구분선=> <hr/>
+
+---> 이클립스에서 아파치 톰캣 실행할때는
+<meta charset="UTF-8"> 포함해야함
+-> 그래야 한글이 안깨짐
+
+***************************************************************
+
+<!DOCTYPE html> : 현재 문서가 HTML5로 작성된 웹 문서임을 나타냄.
+<html>
+<head>
+<title>제목</title>
+
+*메타정보
+<meta charset="UTF-8">
+<meta name="author"content="">
+<meta name="keywords"content=""> : 콘텐츠로 검색가능
+<meta name="description"content="">
+<meta http-equiv="refresh"content="10,링크"> : 이 문서는 10초후 링크로 이동합니다.
+
+* <base href(하이퍼링크 베이스)="링크"target="_blank">
+-> _blank를 클릭하면 링크로 이동
+
+</head>
+<body>
+<h1>문구</h1>
+* h1~h6 : 글자크기
+<img src="사진파일"(사진도 폴더에 넣어줘야함)
+border="테두리값"width="픽셀수"height="높이값"alt=""title="문구">
+<a href="링크"target="_blank"title="문구">저자카페방문</a>
+<p>본문영역1</p>
+</body>
+</html>
+
+
+* html5문서는 소문자 권장
+* <p>~</p>(~가 공백일때)=<p/> : 단축 표기 형식
+* 주석은 <!--로 시작해서 -->로 끝냄
+* 주석은 소스코드를 설명하거나 불필요한 부분을 일시적으로 사용하지 않기위해 사용
+
+
+
+
+
+
+
+
+
+
+
+QnA) 1. HTML/JSP차이?
+       2. 아파치톰캣 실행할때 <body>사이 <%~%>를 넣는 이유?
+       3. jsp는 body 사이에 out.println을 넣어야하고
+          html은 body사이에 안넣어도 된다?
+       4. 태그란?
+태그종류 : <html> / <body>
+
+
+
+
+

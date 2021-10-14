@@ -1,0 +1,13 @@
+2021.06.11
+1. FXML
+BorderPane을 컨테이너로 쓸 때 왼쪽, 오른쪽은 하나씩밖에 수용할 수 없음
+-> vbox나 hbox를 또 깔아줘야함
+
+2. hgap / vgap
+
+3. Insets는 geometry
+
+4. tilepane은 flowpane과 유사함
+
+5. gridpane -> 모눈종이
+

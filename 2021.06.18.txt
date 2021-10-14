@@ -1,0 +1,22 @@
+2021.06.17-18
+* 데이터베이스_오라클 -> 포트 : 1521
+* 오라클은 설치 후 제거할 때는 운영체제에서 지원하는 제거로_제어판
+* blue색 -> sql예약어
+
+1. jdbc : Java Database Connection
+-> 4단계로 구분해서 설명할 수 있음
+1단계 : db제작사마다 다를 수 있는 db연결을 통일된 interface를 구현한 class -> 드라이버
+-> 드라이버 점검 후 메모리로 탑재하는 작업 (드라이브점검 및 로딩)
+2단계 : connection 객체를 획득하는 단계
+3단계 : connection 객체를 통하여 db에 접근한 후 CRUD 작업
+-> 보통 dao(DataBase Access Object)클래스에서 3단계 담당
+4단계 : 활용된 객체를 CLOSE( ) => 자원반납
+
+ConnectionFactory
+-> 1,2,4 단계 커버
+하나의 응용프로그램에서는 오직 하나의 통로만을 활용하는 것이 이점이 크다.
+
+DAO
+-> 3단계
+물음표가 없어도 되는 질의 : 정적인 질의를 사용할 때는 Statement
+물음표가 있는 질의 : 동적인 질의를 사용할 때는 PreparedStatement

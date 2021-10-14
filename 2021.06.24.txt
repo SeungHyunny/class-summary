@@ -1,0 +1,3 @@
+conn as sysdba -> 최고권한자로 접속
+user-name -> sys
+password -> 

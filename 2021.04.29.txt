@@ -1,0 +1,145 @@
+2021.04.29
+1. html 주석
+<!--설명-->
+* 화면에 표시되지 않음.
+
+2. html 한 칸 띄우기
+&nbsp;
+
+3.<img src="abc.jpg"alt="welcome">
+* alt : 해당 이미지가 없을 때 대체되는 문구
+
+
+4. 글로벌 속성 : 모든 태그에 공통적으로 사용 가능한 속성
+1. class="클래스명"
+2. id="이름"
+3. hidden="hidden"
+
+5. 텍스트 관련 태그
+* <strong> : 중요한 내용
+* <sub> : 아래첨자
+* <sup> : 윗첨자
+* <ins> : 아래 밑줄
+* <del> : 가운데 선
+* <mark> : 하이라이트
+
+6. HTML5에서 태그 
+* size=pixels 두께지정
+* align=left,center,right 수평선 정렬
+* noshade="noshade" : 수평선 입체감 제거
+* width=00% : 수평선 상대적 넓이
+
+7. HTML5에서 특수문자 처리
+* < : &lt;
+* > : &gt;
+* # : &num;
+* & : &amp;
+* 스페이스바 : &nbsp;
+* ® : &reg;
+* c(동그라미c) : &copy;
+* <pre> : 공백, 특수문자, 줄 바꿈 등 사용자가 입력한 그대로 화면에 표시
+
+8. 속성 id=#
+ex) <a href="#mem1">영업부</a>
+-> 영업부를 클릭하면 속성 id가 mem1인 곳으로 이동하라
+
+9. a태그(가장 중요)
+* <a href="URL">
+* target 속성값 1. _blank : 새로운 웹 브라우저 창에 연다
+                    2. _self
+                    3. _parent
+                    4. _top
+
+10. base href
+* <base href="URL">
+기본이 되는 URL->head부분에 작성
+* body 부분에 작성되는 <a href="~~~">
+=> base URL+~~~
+
+11. 목록
+1) 무순서 : <ul>태그 사용, 각 항목 <li>
+2) 순서 : <ol>태그 사용, 각 항목 <li>
+3) 정의형 : <dl>태그 사용, 각 항목 <dt>/<dd>
+ex) <dt>첫 번째 아이템</dt>
+	<dd>-html5</dd>
+
+12. 목록속성
+* 무순서 목록
+1) style="list-style-type:disc" : ●
+2) style="list-style-type:circle" : ○
+3) style="list-style-type:square" : ■
+4) style="list-style-type:none" : 기호없음
+
+* 순서 목록
+1) type="1" : 1,2,3
+2) type="A" : A,B,C
+3) type="a" : a,b,c
+로마자 가능
+
+13. 표(table)생성
+border : 선 굵기
+width : 여백
+<tr> : 행 생성
+<td> : 열 생성
+<th> : 가운데정렬, 글자강조
+<caption> : 표 제목
+<rowspan> : 행 병합(세로)
+<colspan> : 열 병합(가로)
+
+14. UML
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

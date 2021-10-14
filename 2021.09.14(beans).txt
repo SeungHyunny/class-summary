@@ -1,0 +1,25 @@
+2021.09.14
+Strategy(전략) & di
+
+src/main/resources -> Spring Bean Configuration File -> 이름.xml -> beans/c/p/context 선택
+
+c : 생성메소드에 있을때
+p : 생성메소드에 없고 get/set활용해서
+
+===> beans안에 bean을 써줌
+	<bean id="strategy" class="com.vision.strategy.AIComputer" c:price = "1200000"
+		<property name="customers"> --> property : set활용
+			<list>
+				<value>이병철</value>
+				<value>강하늘</value>
+				<value>구본희</value>
+				<value>김우중</value>
+				<value>정주영</value>
+			</list>
+		</property>
+	</bean>
+
+* test 만들기
+src/test/java
+-> 이미 만들어진 패키지안에 TestCases.class 만들기
+-> test 어노테이션하기

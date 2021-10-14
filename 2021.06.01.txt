@@ -1,0 +1,123 @@
+2021.06.01 - 02
+*System.out.println(~~) 에서 out 대신 err를 쓰면 빨간 글씨출력
+
+1. 복제
+public class 클래스명 implements Cloneable : 클론을 만들 수 있는 클래스
+
+
+2. 배열
+Student ori = new Student("강하늘",25,new int[]{45,78,90});
+- 배열을 비교할때는 deepEquals를 쓰면 좋음
+
+
+3. 클래스 생성 방법
+1) 변수선언
+2) 생성메소드(기본생성자/일반생성자)
+3) getter & setter
+4) hashCode & equals
+5) toString
+
+4. 정렬
+- sort 활용
+- Arrays.sort(배열명); : 배열을 정렬함
+- compare
+->compare할 수 있는 클래스가 되려면 vo클래스내에
+   comparable이나 comparator인터페이스를 구현해야함
+-> ex)public calss 클래스명 implements Comparable{ } (import까지!!!)
+
+5. 객체비교
+객체를 비교할 때는 hashCode와 equals를 적절하게 override시켜줘야함
+이름과 주소가 모두 같아야 같은 객체로 간주
+- hashCode가 같더라도 equals( )결과가 false인 경우에는 override해줘야함
+
+6. 클래스 만들기
+1) 변수선언
+2) 생성메소드
+- 일반생성자에 super( ); 꼭 넣기
+3) getter & setter
+- 기본생성자일때 set을 통해서 값을 넣고 get을 통해 값 호출 or toString을 통해 호출
+4) hashCode & equals
+- 오버라이딩을 안하면 hashcode가 같지않음
+5) toString
+
+7. null
+객체를 할당하지 않았음을 의미
+
+8. 현재시간
+System.currentTimeMillis( );
+System.nanoTime( );
+
+9. StringBuilder & StringBuffer
+- StringBuilder는 java.lang 패키지에 있기때문에 import안해도 됨.
+- 속도가 빠름
+
+-StringBuffer는 속도가 느린대신 정확도가 좋음
+- 멀티스레드에서 사용 가능하도록 동기화 되어 있음.
+
+10. 설정
+EUC-KR : 글자 한자 당 두개씩 할당
+UTF-8 : 글자 한자 당 세개씩 할당
+
+11. 메소드
+1) replace(a,b); -> a를 b로 바꾸는 메소드 (전처리)
+2) trim( ); -> 공란을 제거하는 메소드
+3) String.valueOf(객체); -> 숫자를 문자열로 바꾸는 메소드
+4) toUpperCase( ) -> 대문자로 고치는 메소드
+5) toLowerCasd( ) -> 소문자로 고치는 메소드
+6) equalsIgnoreCase( ) -> 대소문자 구분x
+
+12. char타입
+char타입은 ' '필수
+-> charAt( );  : 문자 하나를 호출할 때 사용
+ex) 객체.charAt(7); -> 객체에서 7번째에 있는 문자를 호출해라
+
+13. 문자열 분리방법
+1) slpit 메소드 이용
+2) StringTokenizer 클래스 이용
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

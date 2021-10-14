@@ -1,0 +1,30 @@
+2021.05.13
+1. 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function dispGugudan(form){
+		var dan = form.elements[0].value;
+		$gugudan = "";
+		for(let i=1; i<=9; i++){
+			$gugudan += dan + "*" + i + "=" + (dan*i)+"<br/>";
+		}
+		document.getElementById("display").innerHTML=$gugudan;
+	}
+</script>
+</head>
+<body>
+	<div id="display"></div>
+	<form name="myForm">
+		단입력:<input type="text" name="dan"/>
+		<button type="button" onclick="dispGugudan(myForm)">구구단출력</button>
+	</form>
+</body>
+</html>
+
+2. 소수점
+1) Math.round() : 소수점 이하 반올림
+
